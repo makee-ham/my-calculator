@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="window-control-buttons">
+        <div id="close-btn" class="wc-btn"></div>
+        <div id="minimize-btn" class="wc-btn"></div>
+        <div id="modify-btn" class="wc-btn"></div>
+      </div>
+      <div class="display">0</div>
+      <div class="buttons">
+        <!-- 시맨틱 태그 사용 및 접근성 향상 위해 버튼 태그로 수정 -->
+        <button class="button function clear" value="C">C</button>
+        <button class="button function" value="±">±</button>
+        <button class="button function" value="%">%</button>
+        <button class="button operator" value="/">/</button>
+        <button class="button number" value="7">7</button>
+        <button class="button number" value="8">8</button>
+        <button class="button number" value="9">9</button>
+        <button class="button operator" value="*">*</button>
+        <button class="button number" value="4">4</button>
+        <button class="button number" value="5">5</button>
+        <button class="button number" value="6">6</button>
+        <button class="button operator" value="-">-</button>
+        <button class="button number" value="1">1</button>
+        <button class="button number" value="2">2</button>
+        <button class="button number" value="3">3</button>
+        <button class="button operator" value="+">+</button>
+        <button class="button number zero" value="0">0</button>
+        <button class="button point" value=".">.</button>
+        <button class="button equal" value="=">=</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
