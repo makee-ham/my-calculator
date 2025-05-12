@@ -58,6 +58,14 @@ buttons.forEach((elem) =>
       resetCalculator();
     }
 
+    if (classArr.includes("toggle-sign")) {
+      display.textContent = String(-Number(display.textContent));
+    }
+
+    if (classArr.includes("percent")) {
+      display.textContent = String(Number(display.textContent) / 100);
+    }
+
     if (classArr.includes("operator")) {
       const currentValue = Number(display.textContent);
 
